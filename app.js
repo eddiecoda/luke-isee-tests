@@ -22,6 +22,9 @@ function saveCompletion(set, result) {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(all)); } catch (e) { /* log text still shown */ }
 }
 
+/* Strip embedded markup (e.g. inline SVG figures) so the emailed TEST LOG stays readable plain text. */
+function plainText(s) { return String(s).replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim(); }
+
 /* Pure function (also exported for Node verification): builds the TEST LOG text.
    Hard requirement: every missed question, with Luke's answer vs the correct answer. */
 function buildTestLog(set, answers, score, when) {
@@ -38,7 +41,7 @@ function buildTestLog(set, answers, score, when) {
   } else {
     lines.push("Missed questions (" + missed.length + "):");
     missed.forEach((a, i) => {
-      lines.push((i + 1) + ". " + a.prompt);
+      lines.push((i + 1) + ". " + plainText(a.prompt));
       lines.push("   Luke answered: " + a.chosen);
       lines.push("   Correct answer: " + a.correct);
       lines.push("   Feedback: " + a.feedback);
@@ -47,7 +50,7 @@ function buildTestLog(set, answers, score, when) {
   lines.push("");
   lines.push("All answers:");
   answers.forEach((a, i) => {
-    lines.push((i + 1) + ". " + a.prompt + " — Luke: " + a.chosen +
+    lines.push((i + 1) + ". " + plainText(a.prompt) + " — Luke: " + a.chosen +
       " | Correct: " + a.correct + " | " + (a.isCorrect ? "RIGHT" : "WRONG"));
   });
   return lines.join("\n");
@@ -130,7 +133,7 @@ function renderQuestion() {
   const pg = $("passage");
   if (q.passage) { pg.textContent = q.passage; pg.hidden = false; }
   else { pg.textContent = ""; pg.hidden = true; }
-  $("question-prompt").textContent = q.prompt;
+  $("question-prompt").innerHTML = q.prompt;
   $("feedback").hidden = true; $("next-btn").hidden = true;
   const box = $("options"); box.innerHTML = "";
   q.options.forEach(opt => {

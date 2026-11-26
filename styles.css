@@ -29,3 +29,6 @@ footer { text-align: center; color: #667; font-size: .85rem; padding: 12px; }
 textarea { width: 100%; font-family: ui-monospace, monospace; font-size: .85rem; padding: 10px; border-radius: 8px; border: 1px solid #b9c4dd; }
 .note { color: #556; font-size: .9rem; }
 .missed-item { background: #fff; border-left: 4px solid #b3261e; padding: 8px 12px; margin-bottom: 8px; border-radius: 6px; }
+
+/* Figure questions: inline SVG graphics scale to the card width */
+#question-prompt svg, .missed-item svg { max-width: 100%; height: auto; display: block; margin: 8px auto; }
