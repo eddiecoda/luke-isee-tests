@@ -13,6 +13,7 @@ footer { text-align: center; color: #667; font-size: .85rem; padding: 12px; }
 .quiz-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-weight: 600; }
 .progress-bar { height: 10px; background: #dde3f0; border-radius: 999px; overflow: hidden; margin: 10px 0 4px; }
 #progress-fill { height: 100%; width: 0; background: #24447c; transition: width .3s; }
+#passage { background: #fff; border: 2px solid #d7deee; border-radius: 12px; padding: 14px 16px; margin-bottom: 12px; line-height: 1.55; font-size: 1.05rem; }
 #question-prompt { font-size: 1.25rem; font-weight: 600; line-height: 1.4; }
 #options { display: grid; gap: 10px; }
 .option { width: 100%; text-align: left; font-size: 1.1rem; padding: 14px 16px; border-radius: 12px; border: 2px solid #b9c4dd; background: #fff; cursor: pointer; min-height: 52px; }

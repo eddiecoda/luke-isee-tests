@@ -1,7 +1,850 @@
 {
   "version": 1,
-  "generatedFrom": "goals/school-homework-reports/hidden_files/replacements/isee_words5.json",
+  "generatedFrom": "goals/school-homework-reports/hidden_files/replacements/ (isee_vr_set8, isee_qr_set6, isee_rc_set6, isee_ma_set7, isee_words5, isee_common_vocab1-3)",
   "sets": [
+    {
+      "id": "isee-vr-set-8",
+      "section": "Verbal Reasoning (VR)",
+      "title": "Luke ISEE Lower — Verbal Reasoning — Set 8",
+      "subtitle": "ISEE Lower — synonyms & sentence completion",
+      "sourceFormId": "1NjXq8q6xn-3A-ksHd41GXGCAhQAiJCqanrt8dP80sqg",
+      "questions": [
+        {
+          "prompt": "1. Sandpaper feels coarse when you rub it. In this sentence, the word COARSE means most nearly —",
+          "options": [
+            "rough",
+            "smooth",
+            "soft",
+            "shiny"
+          ],
+          "correct": "rough",
+          "feedback": "A coarse surface like sandpaper is rough to the touch, not smooth or soft."
+        },
+        {
+          "prompt": "2. The school rules oblige students to wear uniforms. In this sentence, the word OBLIGE means most nearly —",
+          "options": [
+            "require",
+            "allow",
+            "visit",
+            "delay"
+          ],
+          "correct": "require",
+          "feedback": "Rules that oblige students require them to do something; they do not merely allow it."
+        },
+        {
+          "prompt": "3. The loud thunder perturbed the sleeping baby. In this sentence, the word PERTURB means most nearly —",
+          "options": [
+            "disturb",
+            "calm",
+            "praise",
+            "feed"
+          ],
+          "correct": "disturb",
+          "feedback": "To perturb is to disturb or unsettle, the opposite of to calm."
+        },
+        {
+          "prompt": "4. The word GENEROUS means most nearly —",
+          "options": [
+            "unselfish",
+            "stingy",
+            "greedy",
+            "careless"
+          ],
+          "correct": "unselfish",
+          "feedback": "A generous person shares freely with others, so unselfish is closest; stingy and greedy are opposites."
+        },
+        {
+          "prompt": "5. The word STURDY means most nearly —",
+          "options": [
+            "strong",
+            "fragile",
+            "hollow",
+            "narrow"
+          ],
+          "correct": "strong",
+          "feedback": "Something sturdy is built strongly and does not break easily."
+        },
+        {
+          "prompt": "6. The word VANISH means most nearly —",
+          "options": [
+            "disappear",
+            "arrive",
+            "sparkle",
+            "wander"
+          ],
+          "correct": "disappear",
+          "feedback": "To vanish is to disappear suddenly so it can no longer be seen."
+        },
+        {
+          "prompt": "7. The word TIMID means most nearly —",
+          "options": [
+            "shy",
+            "bold",
+            "noisy",
+            "proud"
+          ],
+          "correct": "shy",
+          "feedback": "A timid person is shy and easily frightened, not bold."
+        },
+        {
+          "prompt": "8. The word EXPAND means most nearly —",
+          "options": [
+            "grow larger",
+            "shrink",
+            "freeze",
+            "crack"
+          ],
+          "correct": "grow larger",
+          "feedback": "To expand is to grow larger or spread out, the opposite of to shrink."
+        },
+        {
+          "prompt": "9. The word SCARCE means most nearly —",
+          "options": [
+            "hard to find",
+            "plentiful",
+            "broken",
+            "expensive-looking"
+          ],
+          "correct": "hard to find",
+          "feedback": "Something scarce is in short supply and hard to find."
+        },
+        {
+          "prompt": "10. The word BANISH means most nearly —",
+          "options": [
+            "send away",
+            "invite in",
+            "forgive",
+            "follow"
+          ],
+          "correct": "send away",
+          "feedback": "To banish someone is to send them away, often as a punishment."
+        },
+        {
+          "prompt": "11. The word POLITE means most nearly —",
+          "options": [
+            "courteous",
+            "rude",
+            "sleepy",
+            "curious"
+          ],
+          "correct": "courteous",
+          "feedback": "A polite person is courteous and shows good manners."
+        },
+        {
+          "prompt": "12. The word RAPID means most nearly —",
+          "options": [
+            "swift",
+            "gradual",
+            "silent",
+            "steady"
+          ],
+          "correct": "swift",
+          "feedback": "Rapid means swift and fast-moving."
+        },
+        {
+          "prompt": "13. The word ANCIENT means most nearly —",
+          "options": [
+            "very old",
+            "brand new",
+            "very large",
+            "far away"
+          ],
+          "correct": "very old",
+          "feedback": "Ancient things are very old, from a long time ago."
+        },
+        {
+          "prompt": "14. Unlike his brother, who kept every toy to himself, Sam was ___ and let everyone play with his games.",
+          "options": [
+            "generous",
+            "selfish",
+            "greedy",
+            "stingy"
+          ],
+          "correct": "generous",
+          "feedback": "The word Unlike signals a contrast: his brother kept things to himself, while Sam shared, so Sam was generous."
+        },
+        {
+          "prompt": "15. Unlike Mia, who rushed through her work, Zoe was ___ and checked every answer twice.",
+          "options": [
+            "careful",
+            "hasty",
+            "careless",
+            "speedy"
+          ],
+          "correct": "careful",
+          "feedback": "Unlike signals a contrast with rushing, so Zoe was careful."
+        },
+        {
+          "prompt": "16. Because the hikers had no map, they felt ___ in the forest and did not know which way to go.",
+          "options": [
+            "lost",
+            "certain",
+            "guided",
+            "ready"
+          ],
+          "correct": "lost",
+          "feedback": "Having no map and not knowing which way to go means the hikers felt lost."
+        },
+        {
+          "prompt": "17. The glass vase is ___, so carry it with both hands and do not drop it.",
+          "options": [
+            "fragile",
+            "sturdy",
+            "flexible",
+            "heavy"
+          ],
+          "correct": "fragile",
+          "feedback": "A glass vase that must not be dropped is fragile, meaning easily broken."
+        },
+        {
+          "prompt": "18. After running laps all afternoon, the players were ___ and sat down to rest.",
+          "options": [
+            "weary",
+            "energetic",
+            "alert",
+            "fresh"
+          ],
+          "correct": "weary",
+          "feedback": "Running all afternoon left the players weary, meaning very tired."
+        },
+        {
+          "prompt": "19. The teacher asked the class to ___ in a straight line before leaving the room.",
+          "options": [
+            "assemble",
+            "scatter",
+            "vanish",
+            "wander"
+          ],
+          "correct": "assemble",
+          "feedback": "To assemble in a line is to gather together in an orderly group."
+        },
+        {
+          "prompt": "20. Ben tried to ___ his little sister by hiding her favorite stuffed animal.",
+          "options": [
+            "perturb",
+            "calm",
+            "comfort",
+            "praise"
+          ],
+          "correct": "perturb",
+          "feedback": "Hiding her favorite toy would perturb, or upset, his sister — not calm or comfort her."
+        },
+        {
+          "prompt": "21. The sandpaper felt ___ against the wood, so it could smooth the rough edge.",
+          "options": [
+            "coarse",
+            "smooth",
+            "glossy",
+            "soft"
+          ],
+          "correct": "coarse",
+          "feedback": "Sandpaper works because it feels coarse, meaning rough, against the wood."
+        },
+        {
+          "prompt": "22. The librarian will ___ the new books on the shelf in alphabetical order.",
+          "options": [
+            "arrange",
+            "scatter",
+            "damage",
+            "hide"
+          ],
+          "correct": "arrange",
+          "feedback": "Putting books in alphabetical order is arranging them."
+        },
+        {
+          "prompt": "23. Because the directions were ___, every student knew exactly what to do.",
+          "options": [
+            "clear",
+            "confusing",
+            "hidden",
+            "lengthy"
+          ],
+          "correct": "clear",
+          "feedback": "If every student knew exactly what to do, the directions were clear."
+        },
+        {
+          "prompt": "24. The shy puppy was ___ and hid behind its owner whenever a stranger came near.",
+          "options": [
+            "timid",
+            "bold",
+            "noisy",
+            "proud"
+          ],
+          "correct": "timid",
+          "feedback": "A puppy that hides from strangers is timid, meaning shy and easily frightened."
+        },
+        {
+          "prompt": "25. When the bell rang, the students walked ___ to their classrooms without running.",
+          "options": [
+            "calmly",
+            "wildly",
+            "loudly",
+            "backward"
+          ],
+          "correct": "calmly",
+          "feedback": "Walking without running to classrooms is walking calmly."
+        },
+        {
+          "prompt": "26. The author's final paragraph tried to ___ readers to save water during the dry summer.",
+          "options": [
+            "persuade",
+            "ignore",
+            "confuse",
+            "forbid"
+          ],
+          "correct": "persuade",
+          "feedback": "An author who tries to get readers to act is trying to persuade them."
+        }
+      ]
+    },
+    {
+      "id": "isee-qr-set-6",
+      "section": "Quantitative Reasoning (QR)",
+      "title": "Luke ISEE Lower — Quantitative Reasoning — Set 6",
+      "subtitle": "ISEE Lower — quantitative reasoning",
+      "sourceFormId": "1v7LRbpZmoRGDH3aSYZrJriC1NYPlrSV-aO6kW9Y2N_g",
+      "questions": [
+        {
+          "prompt": "1. A square piece of cardboard is 8 inches on each side. A 3-inch square is cut from ONE corner. What is the area of the cardboard that is left?",
+          "options": [
+            "55 square inches",
+            "61 square inches",
+            "64 square inches",
+            "49 square inches"
+          ],
+          "correct": "55 square inches",
+          "feedback": "The whole square is 8 × 8 = 64 square inches. Cutting out one 3 × 3 corner removes 9, leaving 64 − 9 = 55 square inches."
+        },
+        {
+          "prompt": "2. A rectangular garden is 12 feet long and 9 feet wide. A rectangular path 4 feet by 3 feet is paved inside it and cannot be planted. What area can be planted?",
+          "options": [
+            "96 square feet",
+            "108 square feet",
+            "84 square feet",
+            "100 square feet"
+          ],
+          "correct": "96 square feet",
+          "feedback": "The garden is 12 × 9 = 108 square feet. The path takes 4 × 3 = 12, leaving 108 − 12 = 96 square feet."
+        },
+        {
+          "prompt": "3. A square tile design is 10 inches on each side. A rectangle 6 inches by 4 inches is removed from one corner. What is the area that remains?",
+          "options": [
+            "76 square inches",
+            "100 square inches",
+            "84 square inches",
+            "64 square inches"
+          ],
+          "correct": "76 square inches",
+          "feedback": "The square is 10 × 10 = 100 square inches. Removing 6 × 4 = 24 leaves 100 − 24 = 76 square inches."
+        },
+        {
+          "prompt": "4. A triangle flag points to the right at the TOP of a pole. The flag is flipped over a horizontal line. After the flip, the triangle —",
+          "options": [
+            "points to the right at the BOTTOM of the pole",
+            "points to the left at the TOP of the pole",
+            "points to the left at the BOTTOM of the pole",
+            "points to the right at the TOP of the pole"
+          ],
+          "correct": "points to the right at the BOTTOM of the pole",
+          "feedback": "Flipping over a horizontal line turns top and bottom around but not left and right, so the triangle still points right and is now at the bottom."
+        },
+        {
+          "prompt": "5. An arrow points to the right. The arrow is flipped over a vertical line. After the flip, the arrow —",
+          "options": [
+            "points to the left",
+            "points to the right",
+            "points straight up",
+            "points straight down"
+          ],
+          "correct": "points to the left",
+          "feedback": "Flipping over a vertical line reverses left and right, so a right-pointing arrow points left."
+        },
+        {
+          "prompt": "6. A sticker is moved from the left side of a page to the right side without turning or flipping it. This change is best described as —",
+          "options": [
+            "It was slid straight across",
+            "It was flipped over a vertical line",
+            "It was flipped over a horizontal line",
+            "It was turned upside down"
+          ],
+          "correct": "It was slid straight across",
+          "feedback": "Moving a shape without turning or flipping it is a slide."
+        },
+        {
+          "prompt": "7. A teacher packs 84 worksheets in stacks of 7. Which equation shows how to find the number of stacks (s)?",
+          "options": [
+            "s = 84 ÷ 7",
+            "s = 84 × 7",
+            "s = 84 − 7",
+            "s = 7 ÷ 84"
+          ],
+          "correct": "s = 84 ÷ 7",
+          "feedback": "The total is divided into groups of 7, so s = 84 ÷ 7 = 12 stacks."
+        },
+        {
+          "prompt": "8. Which expression means '7 less than 3 times a number n'?",
+          "options": [
+            "3n − 7",
+            "7 − 3n",
+            "3(n − 7)",
+            "10n"
+          ],
+          "correct": "3n − 7",
+          "feedback": "3 times a number is 3n, and 7 less than that is 3n − 7; 'less than' keeps 3n first."
+        },
+        {
+          "prompt": "9. Which net folds into a cube?",
+          "options": [
+            "A middle square with one square attached to each of its four sides and one more square attached to one of those side squares",
+            "Four squares in a straight row only",
+            "A triangle with a square attached to each side",
+            "Two squares side by side"
+          ],
+          "correct": "A middle square with one square attached to each of its four sides and one more square attached to one of those side squares",
+          "feedback": "A cube has 6 square faces. That net has 1 + 4 + 1 = 6 squares arranged so they fold into a closed cube."
+        },
+        {
+          "prompt": "10. If ♠ × ■ = ♠, and ♠ is not 0, what number must ■ stand for?",
+          "options": [
+            "1",
+            "0",
+            "♠",
+            "10"
+          ],
+          "correct": "1",
+          "feedback": "Multiplying by 1 leaves a number unchanged, so ■ must be 1."
+        },
+        {
+          "prompt": "11. A graph shows a cyclist's distance from home over time. The line climbs steeply, then is flat, then climbs gently. What does the flat part most likely show?",
+          "options": [
+            "The cyclist stopped and rested",
+            "The cyclist rode faster and faster",
+            "The cyclist turned around and rode home",
+            "The cyclist rode downhill"
+          ],
+          "correct": "The cyclist stopped and rested",
+          "feedback": "On a distance-from-home graph, a flat line means distance is not changing, so the cyclist stopped."
+        },
+        {
+          "prompt": "12. Look at the pattern: 7, 12, 17, 22, … What is the 10th number in the pattern?",
+          "options": [
+            "52",
+            "47",
+            "57",
+            "42"
+          ],
+          "correct": "52",
+          "feedback": "Each term adds 5. The 10th term is 7 + 9 × 5 = 52."
+        },
+        {
+          "prompt": "13. One van can carry 9 students. How many vans are needed to carry 74 students?",
+          "options": [
+            "9 vans",
+            "8 vans",
+            "7 vans",
+            "10 vans"
+          ],
+          "correct": "9 vans",
+          "feedback": "8 vans carry only 72 students, so one more van is needed for the last 2 students: 9 vans in all."
+        },
+        {
+          "prompt": "14. Use the digits 3, 5, 6, 8, and 9 one time each to build the largest EVEN number. What is the digit in the tens place?",
+          "options": [
+            "3",
+            "5",
+            "6",
+            "8"
+          ],
+          "correct": "3",
+          "feedback": "The largest even number is 98,536 (it must end in 6 or 8, and ending in 6 gives the larger number). Its tens digit is 3."
+        },
+        {
+          "prompt": "15. A jar holds 6 red, 4 blue, and 2 green marbles. Two red marbles are taken out and replaced with green marbles. How many green marbles are in the jar now?",
+          "options": [
+            "4 green marbles",
+            "2 green marbles",
+            "6 green marbles",
+            "8 green marbles"
+          ],
+          "correct": "4 green marbles",
+          "feedback": "The jar started with 2 green marbles and 2 more green marbles were added, so there are 2 + 2 = 4 green marbles."
+        },
+        {
+          "prompt": "16. Ana is making bags for 8 friends. Each bag gets 5 pencils. Pencils are sold in packs of 10. How could Ana figure out how many packs she needs?",
+          "options": [
+            "Multiply 8 by 5, and then divide by 10",
+            "Multiply 10 by 5, and then divide by 8",
+            "Divide 8 by 5, and then multiply by 10",
+            "Multiply 8 by 10, and then divide by 5"
+          ],
+          "correct": "Multiply 8 by 5, and then divide by 10",
+          "feedback": "First find the total pencils needed: 8 × 5 = 40. Then divide by 10 pencils per pack to get 4 packs. Total first, pack size second."
+        }
+      ]
+    },
+    {
+      "id": "isee-rc-set-6",
+      "section": "Reading Comprehension (RC)",
+      "title": "Luke ISEE Lower — Reading Comprehension — Set 6",
+      "subtitle": "ISEE Lower — reading passages & questions",
+      "sourceFormId": "1zBY5dhpbPhpM0zSKRsyl4iS--etqUxtfknraUMsfDp0",
+      "questions": [
+        {
+          "passage": "Sea turtles spend most of their lives in the ocean, but female sea turtles must come ashore to lay their eggs. On a dark night, a female turtle crawls out of the surf and digs a deep nest in the sand with her back flippers. She lays about one hundred eggs, covers them with sand, and returns to the sea. About two months later, the eggs hatch. The tiny turtles dig their way up through the sand, usually at night, and hurry toward the water. Bright lights from houses and streets can confuse the hatchlings and lead them away from the ocean, so many beach towns ask people to turn off outdoor lights during hatching season.",
+          "prompt": "1. What is the main idea of this passage?",
+          "options": [
+            "Female sea turtles lay eggs on beaches, and their hatchlings must reach the ocean safely",
+            "Sea turtles are the largest reptiles in the ocean",
+            "Beach towns have many houses and streets",
+            "Sand is warm during the summer"
+          ],
+          "correct": "Female sea turtles lay eggs on beaches, and their hatchlings must reach the ocean safely",
+          "feedback": "The passage follows the female turtle ashore to lay eggs and then the hatchlings' trip back to the ocean."
+        },
+        {
+          "passage": "Sea turtles spend most of their lives in the ocean, but female sea turtles must come ashore to lay their eggs. On a dark night, a female turtle crawls out of the surf and digs a deep nest in the sand with her back flippers. She lays about one hundred eggs, covers them with sand, and returns to the sea. About two months later, the eggs hatch. The tiny turtles dig their way up through the sand, usually at night, and hurry toward the water. Bright lights from houses and streets can confuse the hatchlings and lead them away from the ocean, so many beach towns ask people to turn off outdoor lights during hatching season.",
+          "prompt": "2. According to the passage, how does a female sea turtle dig her nest?",
+          "options": [
+            "With her front flippers",
+            "With her back flippers",
+            "With a sharp shell",
+            "With her tail"
+          ],
+          "correct": "With her back flippers",
+          "feedback": "The passage says she digs a deep nest in the sand with her back flippers."
+        },
+        {
+          "passage": "Sea turtles spend most of their lives in the ocean, but female sea turtles must come ashore to lay their eggs. On a dark night, a female turtle crawls out of the surf and digs a deep nest in the sand with her back flippers. She lays about one hundred eggs, covers them with sand, and returns to the sea. About two months later, the eggs hatch. The tiny turtles dig their way up through the sand, usually at night, and hurry toward the water. Bright lights from houses and streets can confuse the hatchlings and lead them away from the ocean, so many beach towns ask people to turn off outdoor lights during hatching season.",
+          "prompt": "3. About how long after the eggs are laid do they hatch?",
+          "options": [
+            "About two days",
+            "About two weeks",
+            "About two months",
+            "About two years"
+          ],
+          "correct": "About two months",
+          "feedback": "The passage says about two months later, the eggs hatch."
+        },
+        {
+          "passage": "Sea turtles spend most of their lives in the ocean, but female sea turtles must come ashore to lay their eggs. On a dark night, a female turtle crawls out of the surf and digs a deep nest in the sand with her back flippers. She lays about one hundred eggs, covers them with sand, and returns to the sea. About two months later, the eggs hatch. The tiny turtles dig their way up through the sand, usually at night, and hurry toward the water. Bright lights from houses and streets can confuse the hatchlings and lead them away from the ocean, so many beach towns ask people to turn off outdoor lights during hatching season.",
+          "prompt": "4. Why do many beach towns ask people to turn off outdoor lights during hatching season?",
+          "options": [
+            "Bright lights can confuse hatchlings and lead them away from the ocean",
+            "The lights keep the mother turtles awake",
+            "The towns are trying to save money on electricity",
+            "Bright lights make the sand too warm"
+          ],
+          "correct": "Bright lights can confuse hatchlings and lead them away from the ocean",
+          "feedback": "The passage says bright lights can confuse the hatchlings and lead them away from the ocean."
+        },
+        {
+          "passage": "Sea turtles spend most of their lives in the ocean, but female sea turtles must come ashore to lay their eggs. On a dark night, a female turtle crawls out of the surf and digs a deep nest in the sand with her back flippers. She lays about one hundred eggs, covers them with sand, and returns to the sea. About two months later, the eggs hatch. The tiny turtles dig their way up through the sand, usually at night, and hurry toward the water. Bright lights from houses and streets can confuse the hatchlings and lead them away from the ocean, so many beach towns ask people to turn off outdoor lights during hatching season.",
+          "prompt": "5. In the passage, the word ashore most nearly means —",
+          "options": [
+            "onto the land",
+            "under the water",
+            "into a nest",
+            "toward the moon"
+          ],
+          "correct": "onto the land",
+          "feedback": "A turtle that comes ashore comes out of the ocean onto the land."
+        },
+        {
+          "passage": "For hundreds of years, lighthouses have helped ships travel safely along rocky coasts. Before modern navigation tools, a ship's captain could not always tell where the shore was on a dark or foggy night. A lighthouse's bright beam warned sailors about dangerous rocks and showed them the way into a harbor. Early lighthouses burned wood or oil lamps. Later, strong electric lights and lenses that focused the beam let the light be seen from far away. Today, most lighthouses are controlled by computers and no longer need a keeper living in them, but sailors still value them as a backup when electronic systems fail.",
+          "prompt": "6. What is the main idea of this passage?",
+          "options": [
+            "Lighthouses have long helped ships travel safely, and they still matter today",
+            "Lighthouse keepers lived lonely lives",
+            "Electric lights were invented for lighthouses",
+            "Fog is dangerous for sailors"
+          ],
+          "correct": "Lighthouses have long helped ships travel safely, and they still matter today",
+          "feedback": "The whole passage describes how lighthouses warned and guided ships in the past and why sailors still value them now."
+        },
+        {
+          "passage": "For hundreds of years, lighthouses have helped ships travel safely along rocky coasts. Before modern navigation tools, a ship's captain could not always tell where the shore was on a dark or foggy night. A lighthouse's bright beam warned sailors about dangerous rocks and showed them the way into a harbor. Early lighthouses burned wood or oil lamps. Later, strong electric lights and lenses that focused the beam let the light be seen from far away. Today, most lighthouses are controlled by computers and no longer need a keeper living in them, but sailors still value them as a backup when electronic systems fail.",
+          "prompt": "7. According to the passage, what did a lighthouse's beam warn sailors about?",
+          "options": [
+            "Storms far out at sea",
+            "Dangerous rocks near the shore",
+            "Other ships in the harbor",
+            "Whales in deep water"
+          ],
+          "correct": "Dangerous rocks near the shore",
+          "feedback": "The passage says the bright beam warned sailors about dangerous rocks and showed them the way into a harbor."
+        },
+        {
+          "passage": "For hundreds of years, lighthouses have helped ships travel safely along rocky coasts. Before modern navigation tools, a ship's captain could not always tell where the shore was on a dark or foggy night. A lighthouse's bright beam warned sailors about dangerous rocks and showed them the way into a harbor. Early lighthouses burned wood or oil lamps. Later, strong electric lights and lenses that focused the beam let the light be seen from far away. Today, most lighthouses are controlled by computers and no longer need a keeper living in them, but sailors still value them as a backup when electronic systems fail.",
+          "prompt": "8. Which of these happened last?",
+          "options": [
+            "Lighthouses burned wood lamps",
+            "Lighthouses burned oil lamps",
+            "Lighthouses began to be controlled by computers",
+            "Captains used lighthouses to find harbors"
+          ],
+          "correct": "Lighthouses began to be controlled by computers",
+          "feedback": "The passage ends by saying that today most lighthouses are controlled by computers, after the wood and oil lamp eras."
+        },
+        {
+          "passage": "For hundreds of years, lighthouses have helped ships travel safely along rocky coasts. Before modern navigation tools, a ship's captain could not always tell where the shore was on a dark or foggy night. A lighthouse's bright beam warned sailors about dangerous rocks and showed them the way into a harbor. Early lighthouses burned wood or oil lamps. Later, strong electric lights and lenses that focused the beam let the light be seen from far away. Today, most lighthouses are controlled by computers and no longer need a keeper living in them, but sailors still value them as a backup when electronic systems fail.",
+          "prompt": "9. Why do sailors still value lighthouses today?",
+          "options": [
+            "They are backup guides when electronic systems fail",
+            "They are the only lights on the coast",
+            "Keepers still live in all of them",
+            "Their beams are brighter than the sun"
+          ],
+          "correct": "They are backup guides when electronic systems fail",
+          "feedback": "The passage says sailors still value lighthouses as a backup when electronic systems fail."
+        },
+        {
+          "passage": "For hundreds of years, lighthouses have helped ships travel safely along rocky coasts. Before modern navigation tools, a ship's captain could not always tell where the shore was on a dark or foggy night. A lighthouse's bright beam warned sailors about dangerous rocks and showed them the way into a harbor. Early lighthouses burned wood or oil lamps. Later, strong electric lights and lenses that focused the beam let the light be seen from far away. Today, most lighthouses are controlled by computers and no longer need a keeper living in them, but sailors still value them as a backup when electronic systems fail.",
+          "prompt": "10. In the passage, the word navigation most nearly means —",
+          "options": [
+            "finding the way while traveling",
+            "building a tall tower",
+            "burning oil for light",
+            "watching for storms"
+          ],
+          "correct": "finding the way while traveling",
+          "feedback": "Navigation tools are tools that help travelers find their way."
+        },
+        {
+          "passage": "Priya had been saving her allowance for a new sketchbook. On Saturday morning, she counted her money one more time and smiled — she finally had enough. At the art store, however, she stopped in front of a display of paints. The blue paint she had wanted for months was on sale. Priya held the sketchbook in one hand and the paint in the other. 'I can only choose one today,' she whispered. She thought about the drawings she wanted to finish that weekend. Slowly, she put the paint back on the shelf. 'Next month,' she promised herself, and she carried the sketchbook to the counter.",
+          "prompt": "11. Why did Priya smile on Saturday morning?",
+          "options": [
+            "She found a lost paintbrush",
+            "She finally had enough money saved for a sketchbook",
+            "The art store was having a sale",
+            "Her friend gave her a sketchbook"
+          ],
+          "correct": "She finally had enough money saved for a sketchbook",
+          "feedback": "Priya counted her money and smiled because she finally had enough for the sketchbook she had been saving for."
+        },
+        {
+          "passage": "Priya had been saving her allowance for a new sketchbook. On Saturday morning, she counted her money one more time and smiled — she finally had enough. At the art store, however, she stopped in front of a display of paints. The blue paint she had wanted for months was on sale. Priya held the sketchbook in one hand and the paint in the other. 'I can only choose one today,' she whispered. She thought about the drawings she wanted to finish that weekend. Slowly, she put the paint back on the shelf. 'Next month,' she promised herself, and she carried the sketchbook to the counter.",
+          "prompt": "12. What problem did Priya face at the art store?",
+          "options": [
+            "The store was out of sketchbooks",
+            "She had forgotten her money at home",
+            "She wanted both the sketchbook and the blue paint but could only choose one",
+            "The paint cost more than she expected"
+          ],
+          "correct": "She wanted both the sketchbook and the blue paint but could only choose one",
+          "feedback": "Priya held one item in each hand and said she could only choose one today."
+        },
+        {
+          "passage": "Priya had been saving her allowance for a new sketchbook. On Saturday morning, she counted her money one more time and smiled — she finally had enough. At the art store, however, she stopped in front of a display of paints. The blue paint she had wanted for months was on sale. Priya held the sketchbook in one hand and the paint in the other. 'I can only choose one today,' she whispered. She thought about the drawings she wanted to finish that weekend. Slowly, she put the paint back on the shelf. 'Next month,' she promised herself, and she carried the sketchbook to the counter.",
+          "prompt": "13. What did Priya decide to buy?",
+          "options": [
+            "The blue paint",
+            "The sketchbook",
+            "Both items",
+            "Neither item"
+          ],
+          "correct": "The sketchbook",
+          "feedback": "Priya put the paint back and carried the sketchbook to the counter."
+        },
+        {
+          "passage": "Priya had been saving her allowance for a new sketchbook. On Saturday morning, she counted her money one more time and smiled — she finally had enough. At the art store, however, she stopped in front of a display of paints. The blue paint she had wanted for months was on sale. Priya held the sketchbook in one hand and the paint in the other. 'I can only choose one today,' she whispered. She thought about the drawings she wanted to finish that weekend. Slowly, she put the paint back on the shelf. 'Next month,' she promised herself, and she carried the sketchbook to the counter.",
+          "prompt": "14. How did Priya most likely feel about waiting to buy the paint?",
+          "options": [
+            "She gave up on ever buying it",
+            "She planned to buy it next month",
+            "She was angry at the store",
+            "She forgot about the paint completely"
+          ],
+          "correct": "She planned to buy it next month",
+          "feedback": "Priya promised herself 'Next month' as she put the paint back, showing she planned to buy it later."
+        },
+        {
+          "passage": "Priya had been saving her allowance for a new sketchbook. On Saturday morning, she counted her money one more time and smiled — she finally had enough. At the art store, however, she stopped in front of a display of paints. The blue paint she had wanted for months was on sale. Priya held the sketchbook in one hand and the paint in the other. 'I can only choose one today,' she whispered. She thought about the drawings she wanted to finish that weekend. Slowly, she put the paint back on the shelf. 'Next month,' she promised herself, and she carried the sketchbook to the counter.",
+          "prompt": "15. In the passage, the word display most nearly means —",
+          "options": [
+            "an arrangement of items for people to see",
+            "a shelf that is empty",
+            "a price tag",
+            "a shopping list"
+          ],
+          "correct": "an arrangement of items for people to see",
+          "feedback": "Priya stopped in front of a display of paints, an arrangement set out for shoppers to see."
+        }
+      ]
+    },
+    {
+      "id": "isee-ma-set-7",
+      "section": "Math Achievement (MA)",
+      "title": "Luke ISEE Lower — Mathematics Achievement — Set 7",
+      "subtitle": "ISEE Lower — mathematics achievement",
+      "sourceFormId": "1H1rlcGYhvaIc4OaB8NvHH9fhdGmCsWpYgHQ8_dqT1u0",
+      "questions": [
+        {
+          "prompt": "1. A number line runs from 0 to 24 and is divided into 6 equal spaces. Each space is worth 4. What number is at the 3rd mark after 0?",
+          "options": [
+            "12",
+            "18",
+            "8",
+            "16"
+          ],
+          "correct": "12",
+          "feedback": "There are 6 equal spaces across 24, so each space is 24 ÷ 6 = 4. The 3rd mark is 3 × 4 = 12, not the number of spaces times something else."
+        },
+        {
+          "prompt": "2. A number line is marked in steps of 3. Point P sits 4 marks to the LEFT of 0. What number is at P?",
+          "options": [
+            "−12",
+            "−7",
+            "12",
+            "−4"
+          ],
+          "correct": "−12",
+          "feedback": "Moving left from 0 goes negative. Each mark is 3, so 4 marks left is 0 − 4 × 3 = −12."
+        },
+        {
+          "prompt": "3. A thermometer number line is marked in steps of 2. Point Q sits 3 marks to the LEFT of 4. What number is at Q?",
+          "options": [
+            "−2",
+            "1",
+            "−6",
+            "10"
+          ],
+          "correct": "−2",
+          "feedback": "Start at 4 and move 3 marks of 2 to the left: 4 − 3 × 2 = 4 − 6 = −2."
+        },
+        {
+          "prompt": "4. What is 4 1/4 − 1 3/4?",
+          "options": [
+            "2 1/2",
+            "2 3/4",
+            "3 1/2",
+            "1 1/2"
+          ],
+          "correct": "2 1/2",
+          "feedback": "Borrow: 4 1/4 = 3 5/4. Then 3 5/4 − 1 3/4 = 2 2/4 = 2 1/2."
+        },
+        {
+          "prompt": "5. What is 2 1/2 − 1 3/4?",
+          "options": [
+            "3/4",
+            "1 1/4",
+            "1/2",
+            "1 3/4"
+          ],
+          "correct": "3/4",
+          "feedback": "Use fourths: 2 1/2 = 2 2/4 = 1 6/4. Then 1 6/4 − 1 3/4 = 3/4."
+        },
+        {
+          "prompt": "6. What is 5/6 + 1/4?",
+          "options": [
+            "1 1/12",
+            "6/10",
+            "1",
+            "7/12"
+          ],
+          "correct": "1 1/12",
+          "feedback": "Use twelfths: 5/6 = 10/12 and 1/4 = 3/12, so the sum is 13/12 = 1 1/12."
+        },
+        {
+          "prompt": "7. After a 20% discount, a jacket costs $56. What was the original price?",
+          "options": [
+            "$70",
+            "$67.20",
+            "$76",
+            "$64"
+          ],
+          "correct": "$70",
+          "feedback": "After 20% off you pay 80% of the original. $56 ÷ 0.8 = $70. Check: 20% of $70 is $14, and $70 − $14 = $56."
+        },
+        {
+          "prompt": "8. Which fraction is the greatest?",
+          "options": [
+            "7/8",
+            "5/6",
+            "3/4",
+            "4/5"
+          ],
+          "correct": "7/8",
+          "feedback": "Compare in twenty-fourths/eighths: 7/8 = 0.875, 5/6 ≈ 0.833, 3/4 = 0.75, 4/5 = 0.8, so 7/8 is greatest."
+        },
+        {
+          "prompt": "9. How many centimeters are in 2.5 meters?",
+          "options": [
+            "250 centimeters",
+            "25 centimeters",
+            "2,500 centimeters",
+            "0.25 centimeters"
+          ],
+          "correct": "250 centimeters",
+          "feedback": "One meter is 100 centimeters, so 2.5 × 100 = 250 centimeters."
+        },
+        {
+          "prompt": "10. A square has a side of 6 inches. Which statement is TRUE?",
+          "options": [
+            "It is also a rectangle, and all four of its angles are right angles",
+            "It is not a rectangle because its sides are equal",
+            "Its angles add up to 180 degrees",
+            "It has only two right angles"
+          ],
+          "correct": "It is also a rectangle, and all four of its angles are right angles",
+          "feedback": "A square meets the definition of a rectangle (four right angles, opposite sides equal) and all four of its angles are right angles."
+        },
+        {
+          "prompt": "11. What is the next number in the pattern 2, 6, 12, 20, 30, …?",
+          "options": [
+            "42",
+            "40",
+            "36",
+            "44"
+          ],
+          "correct": "42",
+          "feedback": "The gaps grow: +4, +6, +8, +10, so the next gap is +12 and 30 + 12 = 42."
+        },
+        {
+          "prompt": "12. Mia scored 72, 84, and 90 on three tests. What must she score on a fourth test to have an average of 84?",
+          "options": [
+            "90",
+            "84",
+            "96",
+            "78"
+          ],
+          "correct": "90",
+          "feedback": "An average of 84 over 4 tests needs a total of 336. She has 72 + 84 + 90 = 246, so she needs 336 − 246 = 90."
+        },
+        {
+          "prompt": "13. What is 0.45 written as a percent?",
+          "options": [
+            "45%",
+            "4.5%",
+            "450%",
+            "0.45%"
+          ],
+          "correct": "45%",
+          "feedback": "To write a decimal as a percent, multiply by 100: 0.45 × 100 = 45%."
+        },
+        {
+          "prompt": "14. A recipe calls for 3/4 cup of sugar for one batch. How much sugar is needed for 4 batches?",
+          "options": [
+            "3 cups",
+            "3/4 cup",
+            "1 3/4 cups",
+            "2 1/4 cups"
+          ],
+          "correct": "3 cups",
+          "feedback": "Multiply: 4 × 3/4 = 12/4 = 3 cups."
+        },
+        {
+          "prompt": "15. Which expression is equal to 48 ÷ (6 × 2)?",
+          "options": [
+            "4",
+            "8",
+            "16",
+            "96"
+          ],
+          "correct": "4",
+          "feedback": "Do the parentheses first: 6 × 2 = 12, and 48 ÷ 12 = 4."
+        }
+      ]
+    },
     {
       "id": "isee-words-test-5",
       "section": "Words",
@@ -272,6 +1115,858 @@
           ],
           "correct": "shy",
           "feedback": "Timid means shy and easily frightened."
+        }
+      ]
+    },
+    {
+      "id": "isee-common-vocab-1",
+      "section": "Common Vocab",
+      "title": "Luke ISEE Lower — Common Vocab Test 1",
+      "subtitle": "ISEE Lower — common vocabulary, means most nearly",
+      "sourceFormId": "1VQlgTA3wyIXzDPKtNATAiYcmov3j8wjNRP-bYJN6waI",
+      "questions": [
+        {
+          "prompt": "1. The word ABOLISH means most nearly —",
+          "options": [
+            "end",
+            "create",
+            "permit",
+            "extend"
+          ],
+          "correct": "end",
+          "feedback": "To abolish something is to end it officially, the way a law can be abolished."
+        },
+        {
+          "prompt": "2. The word ILLEGIBLE means most nearly —",
+          "options": [
+            "impossible to read",
+            "easy to read",
+            "torn",
+            "blank"
+          ],
+          "correct": "impossible to read",
+          "feedback": "Illegible handwriting cannot be read at all."
+        },
+        {
+          "prompt": "3. The word BLUNT means most nearly —",
+          "options": [
+            "not sharp",
+            "pointed",
+            "curved",
+            "shiny"
+          ],
+          "correct": "not sharp",
+          "feedback": "A blunt edge is dull — not sharp."
+        },
+        {
+          "prompt": "4. The word CAPABLE means most nearly —",
+          "options": [
+            "able",
+            "weak",
+            "unwilling",
+            "careless"
+          ],
+          "correct": "able",
+          "feedback": "Someone who is capable is able to do the job well."
+        },
+        {
+          "prompt": "5. The word CONCEAL means most nearly —",
+          "options": [
+            "hide",
+            "reveal",
+            "carry",
+            "drop"
+          ],
+          "correct": "hide",
+          "feedback": "To conceal is to hide something so it cannot be seen."
+        },
+        {
+          "prompt": "6. The word FRAGILE means most nearly —",
+          "options": [
+            "easily broken",
+            "sturdy",
+            "heavy",
+            "flexible"
+          ],
+          "correct": "easily broken",
+          "feedback": "Fragile things break easily and must be handled with care."
+        },
+        {
+          "prompt": "7. The word FURIOUS means most nearly —",
+          "options": [
+            "very angry",
+            "very happy",
+            "very tired",
+            "very calm"
+          ],
+          "correct": "very angry",
+          "feedback": "Furious means extremely angry."
+        },
+        {
+          "prompt": "8. The word GENEROUS means most nearly —",
+          "options": [
+            "willing to give",
+            "stingy",
+            "wealthy",
+            "proud"
+          ],
+          "correct": "willing to give",
+          "feedback": "A generous person is happy to give and share with others."
+        },
+        {
+          "prompt": "9. The word HARDSHIP means most nearly —",
+          "options": [
+            "suffering",
+            "comfort",
+            "success",
+            "journey"
+          ],
+          "correct": "suffering",
+          "feedback": "A hardship is a time of suffering or difficulty."
+        },
+        {
+          "prompt": "10. The word HAZARD means most nearly —",
+          "options": [
+            "danger",
+            "safety",
+            "shelter",
+            "tool"
+          ],
+          "correct": "danger",
+          "feedback": "A hazard is a danger — something that could cause harm."
+        },
+        {
+          "prompt": "11. The word ILLUMINATE means most nearly —",
+          "options": [
+            "light up",
+            "darken",
+            "hide",
+            "break"
+          ],
+          "correct": "light up",
+          "feedback": "To illuminate is to light something up so it can be seen."
+        },
+        {
+          "prompt": "12. The word JAGGED means most nearly —",
+          "options": [
+            "uneven",
+            "smooth",
+            "round",
+            "flat"
+          ],
+          "correct": "uneven",
+          "feedback": "Jagged means having sharp, uneven points or edges."
+        },
+        {
+          "prompt": "13. The word MYTH means most nearly —",
+          "options": [
+            "traditional story",
+            "true fact",
+            "news report",
+            "rule"
+          ],
+          "correct": "traditional story",
+          "feedback": "A myth is a traditional story, often about gods or heroes, that is not a proven fact."
+        },
+        {
+          "prompt": "14. The word NOVEL means most nearly —",
+          "options": [
+            "new",
+            "old",
+            "long",
+            "famous"
+          ],
+          "correct": "new",
+          "feedback": "As an adjective, novel means new and never seen before. (A novel is also a long book of fiction.)"
+        },
+        {
+          "prompt": "15. The word SALVAGE means most nearly —",
+          "options": [
+            "save",
+            "destroy",
+            "abandon",
+            "steal"
+          ],
+          "correct": "save",
+          "feedback": "To salvage is to save something from being lost or destroyed."
+        },
+        {
+          "prompt": "16. The word SHABBY means most nearly —",
+          "options": [
+            "worn-out",
+            "neat",
+            "brand-new",
+            "fancy"
+          ],
+          "correct": "worn-out",
+          "feedback": "Shabby things look old and worn-out from use."
+        },
+        {
+          "prompt": "17. The word VALIANT means most nearly —",
+          "options": [
+            "brave",
+            "cowardly",
+            "weak",
+            "foolish"
+          ],
+          "correct": "brave",
+          "feedback": "Valiant means brave, especially in battle."
+        },
+        {
+          "prompt": "18. The word VIVID means most nearly —",
+          "options": [
+            "bright and clear",
+            "dull",
+            "faint",
+            "blurry"
+          ],
+          "correct": "bright and clear",
+          "feedback": "Vivid colors and descriptions are bright, strong, and clear."
+        },
+        {
+          "prompt": "19. The word WEARY means most nearly —",
+          "options": [
+            "tired",
+            "alert",
+            "hungry",
+            "angry"
+          ],
+          "correct": "tired",
+          "feedback": "Weary means very tired."
+        },
+        {
+          "prompt": "20. The word ABUNDANT means most nearly —",
+          "options": [
+            "plentiful",
+            "scarce",
+            "rare",
+            "empty"
+          ],
+          "correct": "plentiful",
+          "feedback": "Abundant means plentiful — more than enough."
+        },
+        {
+          "prompt": "21. The word ACCOMPANY means most nearly —",
+          "options": [
+            "go with",
+            "leave behind",
+            "watch",
+            "follow later"
+          ],
+          "correct": "go with",
+          "feedback": "To accompany someone is to go with them."
+        },
+        {
+          "prompt": "22. The word ABSURD means most nearly —",
+          "options": [
+            "ridiculous",
+            "sensible",
+            "ordinary",
+            "serious"
+          ],
+          "correct": "ridiculous",
+          "feedback": "Something absurd is ridiculous — it makes no sense at all."
+        },
+        {
+          "prompt": "23. The word ARID means most nearly —",
+          "options": [
+            "very dry",
+            "wet",
+            "cold",
+            "fertile"
+          ],
+          "correct": "very dry",
+          "feedback": "Arid land is very dry, with almost no rain."
+        },
+        {
+          "prompt": "24. The word BANQUET means most nearly —",
+          "options": [
+            "feast",
+            "snack",
+            "picnic",
+            "recipe"
+          ],
+          "correct": "feast",
+          "feedback": "A banquet is a feast — a large, formal meal."
+        },
+        {
+          "prompt": "25. The word CATASTROPHE means most nearly —",
+          "options": [
+            "disaster",
+            "celebration",
+            "surprise",
+            "argument"
+          ],
+          "correct": "disaster",
+          "feedback": "A catastrophe is a sudden disaster that causes great damage."
+        }
+      ]
+    },
+    {
+      "id": "isee-common-vocab-2",
+      "section": "Common Vocab",
+      "title": "Luke ISEE Lower — Common Vocab Test 2",
+      "subtitle": "ISEE Lower — common vocabulary, means most nearly",
+      "sourceFormId": "1e26c_DkQX4r4Js2yHWwPJMrhRWg8YBKtcU63cX0C9uI",
+      "questions": [
+        {
+          "prompt": "1. The word COMMEND means most nearly —",
+          "options": [
+            "praise",
+            "blame",
+            "punish",
+            "ignore"
+          ],
+          "correct": "praise",
+          "feedback": "To commend is to praise someone for doing something well."
+        },
+        {
+          "prompt": "2. The word COMPEL means most nearly —",
+          "options": [
+            "force",
+            "allow",
+            "ask",
+            "free"
+          ],
+          "correct": "force",
+          "feedback": "To compel is to force someone to do something."
+        },
+        {
+          "prompt": "3. The word CORDIAL means most nearly —",
+          "options": [
+            "friendly",
+            "rude",
+            "shy",
+            "cold"
+          ],
+          "correct": "friendly",
+          "feedback": "Cordial means warm and friendly."
+        },
+        {
+          "prompt": "4. The word DECEIVE means most nearly —",
+          "options": [
+            "mislead",
+            "help",
+            "obey",
+            "inform"
+          ],
+          "correct": "mislead",
+          "feedback": "To deceive is to mislead someone into believing something false."
+        },
+        {
+          "prompt": "5. The word DECLARE means most nearly —",
+          "options": [
+            "announce",
+            "whisper",
+            "deny",
+            "hide"
+          ],
+          "correct": "announce",
+          "feedback": "To declare is to announce something clearly and officially."
+        },
+        {
+          "prompt": "6. The word ELATED means most nearly —",
+          "options": [
+            "very happy",
+            "sad",
+            "calm",
+            "tired"
+          ],
+          "correct": "very happy",
+          "feedback": "Elated means thrilled — very happy."
+        },
+        {
+          "prompt": "7. The word ELOQUENT means most nearly —",
+          "options": [
+            "well-spoken",
+            "tongue-tied",
+            "quiet",
+            "rude"
+          ],
+          "correct": "well-spoken",
+          "feedback": "An eloquent speaker is well-spoken and persuasive."
+        },
+        {
+          "prompt": "8. The word ELUDE means most nearly —",
+          "options": [
+            "avoid",
+            "catch",
+            "chase",
+            "find"
+          ],
+          "correct": "avoid",
+          "feedback": "To elude is to escape or avoid being caught."
+        },
+        {
+          "prompt": "9. The word EMIT means most nearly —",
+          "options": [
+            "give off",
+            "absorb",
+            "collect",
+            "block"
+          ],
+          "correct": "give off",
+          "feedback": "To emit is to give off, like a fire emitting heat and light."
+        },
+        {
+          "prompt": "10. The word INHABIT means most nearly —",
+          "options": [
+            "live in",
+            "visit",
+            "build",
+            "leave"
+          ],
+          "correct": "live in",
+          "feedback": "To inhabit a place is to live in it."
+        },
+        {
+          "prompt": "11. The word ABANDON means most nearly —",
+          "options": [
+            "leave behind",
+            "keep",
+            "protect",
+            "return to"
+          ],
+          "correct": "leave behind",
+          "feedback": "To abandon is to leave something behind for good."
+        },
+        {
+          "prompt": "12. The word FRAIL means most nearly —",
+          "options": [
+            "weak",
+            "sturdy",
+            "healthy",
+            "young"
+          ],
+          "correct": "weak",
+          "feedback": "Frail means weak and easily harmed."
+        },
+        {
+          "prompt": "13. The word HESITATE means most nearly —",
+          "options": [
+            "pause",
+            "rush",
+            "decide quickly",
+            "refuse"
+          ],
+          "correct": "pause",
+          "feedback": "To hesitate is to pause before doing something, often from doubt."
+        },
+        {
+          "prompt": "14. The word IGNITE means most nearly —",
+          "options": [
+            "set on fire",
+            "put out",
+            "freeze",
+            "melt"
+          ],
+          "correct": "set on fire",
+          "feedback": "To ignite is to set something on fire."
+        },
+        {
+          "prompt": "15. The word LINGER means most nearly —",
+          "options": [
+            "stay on",
+            "hurry away",
+            "arrive",
+            "sleep"
+          ],
+          "correct": "stay on",
+          "feedback": "To linger is to stay on longer than expected instead of leaving."
+        },
+        {
+          "prompt": "16. The word PURSUE means most nearly —",
+          "options": [
+            "chase after",
+            "run from",
+            "ignore",
+            "find"
+          ],
+          "correct": "chase after",
+          "feedback": "To pursue is to chase after something or try to achieve it."
+        },
+        {
+          "prompt": "17. The word SOLITUDE means most nearly —",
+          "options": [
+            "being alone",
+            "crowd",
+            "friendship",
+            "noise"
+          ],
+          "correct": "being alone",
+          "feedback": "Solitude is the state of being alone, away from other people."
+        },
+        {
+          "prompt": "18. The word SOOTHE means most nearly —",
+          "options": [
+            "calm",
+            "upset",
+            "wake",
+            "frighten"
+          ],
+          "correct": "calm",
+          "feedback": "To soothe is to calm and comfort."
+        },
+        {
+          "prompt": "19. The word SPACIOUS means most nearly —",
+          "options": [
+            "roomy",
+            "cramped",
+            "narrow",
+            "tiny"
+          ],
+          "correct": "roomy",
+          "feedback": "Spacious means roomy, with plenty of space."
+        },
+        {
+          "prompt": "20. The word TERRAIN means most nearly —",
+          "options": [
+            "land",
+            "weather",
+            "map",
+            "road"
+          ],
+          "correct": "land",
+          "feedback": "Terrain is land and its physical features, like hills and valleys."
+        },
+        {
+          "prompt": "21. The word BUNGLE means most nearly —",
+          "options": [
+            "mess up",
+            "fix",
+            "plan",
+            "succeed"
+          ],
+          "correct": "mess up",
+          "feedback": "To bungle is to mess something up through clumsiness."
+        },
+        {
+          "prompt": "22. The word SOAR means most nearly —",
+          "options": [
+            "rise high",
+            "fall",
+            "crawl",
+            "sink"
+          ],
+          "correct": "rise high",
+          "feedback": "To soar is to rise high into the air."
+        },
+        {
+          "prompt": "23. The word ADHESIVE means most nearly —",
+          "options": [
+            "sticky",
+            "slippery",
+            "smooth",
+            "dry"
+          ],
+          "correct": "sticky",
+          "feedback": "An adhesive is a sticky substance, like glue."
+        },
+        {
+          "prompt": "24. The word APPROXIMATE means most nearly —",
+          "options": [
+            "almost exact",
+            "exactly right",
+            "completely wrong",
+            "unknown"
+          ],
+          "correct": "almost exact",
+          "feedback": "Approximate means almost exact, but not perfectly precise."
+        },
+        {
+          "prompt": "25. The word DEBATE means most nearly —",
+          "options": [
+            "discussion",
+            "fight",
+            "agreement",
+            "lecture"
+          ],
+          "correct": "discussion",
+          "feedback": "A debate is a formal discussion in which people argue opposite sides."
+        }
+      ]
+    },
+    {
+      "id": "isee-common-vocab-3",
+      "section": "Common Vocab",
+      "title": "Luke ISEE Lower — Common Vocab Test 3",
+      "subtitle": "ISEE Lower — common vocabulary, means most nearly",
+      "sourceFormId": "1BGQ_IYG91M2KOxBeLFsO8JdaPQxD6pZtiRGUqncv5ao",
+      "questions": [
+        {
+          "prompt": "1. The word ACCUSTOMED means most nearly —",
+          "options": [
+            "used to",
+            "new to",
+            "tired of",
+            "afraid of"
+          ],
+          "correct": "used to",
+          "feedback": "Accustomed means used to something — familiar with it from experience."
+        },
+        {
+          "prompt": "2. The word ACHIEVEMENT means most nearly —",
+          "options": [
+            "accomplishment",
+            "failure",
+            "attempt",
+            "reward"
+          ],
+          "correct": "accomplishment",
+          "feedback": "An achievement is an accomplishment — something done well through effort."
+        },
+        {
+          "prompt": "3. The word ACQUAINTANCE means most nearly —",
+          "options": [
+            "casual friend",
+            "best friend",
+            "stranger",
+            "relative"
+          ],
+          "correct": "casual friend",
+          "feedback": "An acquaintance is someone you know, but only as a casual friend."
+        },
+        {
+          "prompt": "4. The word ADAPT means most nearly —",
+          "options": [
+            "adjust",
+            "refuse",
+            "copy",
+            "break"
+          ],
+          "correct": "adjust",
+          "feedback": "To adapt is to adjust or change to fit new conditions."
+        },
+        {
+          "prompt": "5. The word ADEQUATE means most nearly —",
+          "options": [
+            "enough",
+            "excellent",
+            "scarce",
+            "extra"
+          ],
+          "correct": "enough",
+          "feedback": "Adequate means enough — sufficient for what is needed."
+        },
+        {
+          "prompt": "6. The word ADMIRE means most nearly —",
+          "options": [
+            "respect",
+            "envy",
+            "ignore",
+            "imitate"
+          ],
+          "correct": "respect",
+          "feedback": "To admire is to respect and appreciate someone or something."
+        },
+        {
+          "prompt": "7. The word AFFECTION means most nearly —",
+          "options": [
+            "fondness",
+            "anger",
+            "respect",
+            "fear"
+          ],
+          "correct": "fondness",
+          "feedback": "Affection is fondness — a warm, loving feeling."
+        },
+        {
+          "prompt": "8. The word AGGRAVATE means most nearly —",
+          "options": [
+            "annoy",
+            "calm",
+            "help",
+            "please"
+          ],
+          "correct": "annoy",
+          "feedback": "To aggravate is to annoy or irritate. (It can also mean to make a problem worse.)"
+        },
+        {
+          "prompt": "9. The word AGREEABLE means most nearly —",
+          "options": [
+            "pleasant",
+            "rude",
+            "boring",
+            "strict"
+          ],
+          "correct": "pleasant",
+          "feedback": "Agreeable means pleasant and enjoyable."
+        },
+        {
+          "prompt": "10. The word ALTER means most nearly —",
+          "options": [
+            "change",
+            "keep",
+            "hide",
+            "build"
+          ],
+          "correct": "change",
+          "feedback": "To alter is to change or modify something."
+        },
+        {
+          "prompt": "11. The word ALTERNATE means most nearly —",
+          "options": [
+            "switch back and forth",
+            "repeat the same",
+            "stop",
+            "speed up"
+          ],
+          "correct": "switch back and forth",
+          "feedback": "To alternate is to switch back and forth between two things."
+        },
+        {
+          "prompt": "12. The word AMBITION means most nearly —",
+          "options": [
+            "determination to succeed",
+            "laziness",
+            "talent",
+            "luck"
+          ],
+          "correct": "determination to succeed",
+          "feedback": "Ambition is a strong determination to succeed at a goal."
+        },
+        {
+          "prompt": "13. The word APPARENT means most nearly —",
+          "options": [
+            "obvious",
+            "hidden",
+            "doubtful",
+            "false"
+          ],
+          "correct": "obvious",
+          "feedback": "Apparent means obvious — clear and plain to see."
+        },
+        {
+          "prompt": "14. The word APPEAL means most nearly —",
+          "options": [
+            "plea",
+            "demand",
+            "answer",
+            "gift"
+          ],
+          "correct": "plea",
+          "feedback": "An appeal is a plea — an urgent request."
+        },
+        {
+          "prompt": "15. The word APPROPRIATE means most nearly —",
+          "options": [
+            "suitable",
+            "costly",
+            "common",
+            "perfect"
+          ],
+          "correct": "suitable",
+          "feedback": "Appropriate means suitable and proper for the situation."
+        },
+        {
+          "prompt": "16. The word ASSERT means most nearly —",
+          "options": [
+            "declare",
+            "whisper",
+            "question",
+            "deny"
+          ],
+          "correct": "declare",
+          "feedback": "To assert is to declare something firmly and confidently."
+        },
+        {
+          "prompt": "17. The word ASSIST means most nearly —",
+          "options": [
+            "help",
+            "watch",
+            "lead",
+            "follow"
+          ],
+          "correct": "help",
+          "feedback": "To assist is to help or aid."
+        },
+        {
+          "prompt": "18. The word ASSOCIATION means most nearly —",
+          "options": [
+            "partnership",
+            "rivalry",
+            "meeting",
+            "rule"
+          ],
+          "correct": "partnership",
+          "feedback": "An association is a partnership — a group joined together for a purpose."
+        },
+        {
+          "prompt": "19. The word ASSURE means most nearly —",
+          "options": [
+            "promise",
+            "doubt",
+            "ask",
+            "warn"
+          ],
+          "correct": "promise",
+          "feedback": "To assure is to promise or guarantee, so someone feels certain."
+        },
+        {
+          "prompt": "20. The word ASTOUND means most nearly —",
+          "options": [
+            "amaze",
+            "bore",
+            "confuse",
+            "frighten"
+          ],
+          "correct": "amaze",
+          "feedback": "To astound is to amaze and astonish greatly."
+        },
+        {
+          "prompt": "21. The word AUTHORITY means most nearly —",
+          "options": [
+            "power",
+            "knowledge",
+            "fame",
+            "duty"
+          ],
+          "correct": "power",
+          "feedback": "Authority is the power to command and control."
+        },
+        {
+          "prompt": "22. The word AWE means most nearly —",
+          "options": [
+            "wonder",
+            "fear",
+            "respect",
+            "joy"
+          ],
+          "correct": "wonder",
+          "feedback": "Awe is a feeling of amazement and wonder."
+        },
+        {
+          "prompt": "23. The word BARREN means most nearly —",
+          "options": [
+            "unable to grow plants",
+            "fertile",
+            "crowded",
+            "rocky"
+          ],
+          "correct": "unable to grow plants",
+          "feedback": "Barren land is empty and unable to grow plants."
+        },
+        {
+          "prompt": "24. The word BECKON means most nearly —",
+          "options": [
+            "signal to come",
+            "wave goodbye",
+            "point at",
+            "call out"
+          ],
+          "correct": "signal to come",
+          "feedback": "To beckon is to signal or wave someone over, calling them toward you."
+        },
+        {
+          "prompt": "25. The word BENEFICIAL means most nearly —",
+          "options": [
+            "helpful",
+            "harmful",
+            "costly",
+            "common"
+          ],
+          "correct": "helpful",
+          "feedback": "Beneficial means helpful and useful."
         }
       ]
     }

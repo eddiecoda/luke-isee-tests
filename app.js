@@ -8,8 +8,7 @@
 const LOG_EMAIL = "codafamily@mail.grokbot.com";
 const LOG_ENDPOINT = "https://formsubmit.co/ajax/" + LOG_EMAIL;
 const STORAGE_KEY = "luke-isee-tests-completed-v1";
-const COMING_SOON = ["Verbal Reasoning (VR)", "Quantitative Reasoning (QR)",
-  "Reading Comprehension (RC)", "Math Achievement (MA)", "Common Vocab", "AMC 8 (later)"];
+const COMING_SOON = ["AMC 8 (later)"];
 
 let DATA = null, currentSet = null, idx = 0, score = 0, answers = [];
 
@@ -128,6 +127,9 @@ function renderQuestion() {
   $("progress-text").textContent = "Question " + (idx + 1) + " of " + currentSet.questions.length;
   $("score-text").textContent = "Score: " + score;
   $("progress-fill").style.width = ((idx / currentSet.questions.length) * 100) + "%";
+  const pg = $("passage");
+  if (q.passage) { pg.textContent = q.passage; pg.hidden = false; }
+  else { pg.textContent = ""; pg.hidden = true; }
   $("question-prompt").textContent = q.prompt;
   $("feedback").hidden = true; $("next-btn").hidden = true;
   const box = $("options"); box.innerHTML = "";
