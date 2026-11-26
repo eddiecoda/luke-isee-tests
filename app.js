@@ -8,9 +8,24 @@
 const LOG_EMAIL = "codafamily@mail.grokbot.com";
 const LOG_ENDPOINT = "https://formsubmit.co/ajax/" + LOG_EMAIL;
 const STORAGE_KEY = "luke-isee-tests-completed-v1";
+const TIMER_KEY = "luke-isee-timer-v1";
 const COMING_SOON = ["AMC 8 (later)"];
+/* Hardcoded time limits, in minutes. A set not in this table has no timer. */
+const SET_MINUTES = {
+  "isee-words-test-5": 14,
+  "isee-vr-set-8": 15,
+  "isee-qr-set-6": 15,
+  "isee-rc-set-6": 15,
+  "isee-ma-set-7": 15,
+  "isee-common-vocab-1": 15,
+  "isee-common-vocab-2": 15,
+  "isee-common-vocab-3": 15,
+  "isee-qr-set-7": 15,
+  "isee-ma-set-8": 15
+};
 
 let DATA = null, currentSet = null, idx = 0, score = 0, answers = [];
+let timerInterval = null, finishing = false;
 
 function loadCompletions() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
@@ -22,22 +37,71 @@ function saveCompletion(set, result) {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(all)); } catch (e) { /* log text still shown */ }
 }
 
+function loadTimers() {
+  try { return JSON.parse(localStorage.getItem(TIMER_KEY) || "{}"); }
+  catch (e) { return {}; }
+}
+function saveTimers(all) {
+  try { localStorage.setItem(TIMER_KEY, JSON.stringify(all)); } catch (e) { /* display still works */ }
+}
+function getOrStartTimer(setId) {
+  const all = loadTimers();
+  if (all[setId] == null) {
+    all[setId] = Date.now();
+    saveTimers(all);
+  }
+  return all[setId];
+}
+function clearTimer(setId) {
+  const all = loadTimers();
+  if (all[setId] == null) return;
+  delete all[setId];
+  saveTimers(all);
+}
+function remainingMs(setId) {
+  const minutes = SET_MINUTES[setId];
+  if (minutes == null) return null;
+  const start = loadTimers()[setId];
+  if (start == null) return minutes * 60 * 1000;
+  return minutes * 60 * 1000 - (Date.now() - start);
+}
+function formatTimeLeft(ms) {
+  const secs = Math.max(0, Math.ceil(ms / 1000));
+  const m = Math.floor(secs / 60);
+  const s = secs % 60;
+  return "Time left " + m + ":" + String(s).padStart(2, "0");
+}
+function stopTimerInterval() {
+  if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
+}
+
 /* Strip embedded markup (e.g. inline SVG figures) so the emailed TEST LOG stays readable plain text. */
 function plainText(s) { return String(s).replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim(); }
 
+function isUnanswered(a) {
+  return !!(a && (a.unanswered || a.chosen === "(unanswered)"));
+}
+
 /* Pure function (also exported for Node verification): builds the TEST LOG text.
-   Hard requirement: every missed question, with Luke's answer vs the correct answer. */
-function buildTestLog(set, answers, score, when) {
-  const missed = answers.filter(a => !a.isCorrect);
+   Hard requirement: every missed question, with Luke's answer vs the correct answer.
+   Unanswered items (time ran out) are listed separately and tagged UNANSWERED, not WRONG. */
+function buildTestLog(set, answers, score, when, opts) {
+  const timeRanOut = !!(opts && opts.timeRanOut);
+  const missed = answers.filter(a => !a.isCorrect && !isUnanswered(a));
+  const unanswered = answers.filter(isUnanswered);
+  const total = (timeRanOut && set && set.questions) ? set.questions.length : answers.length;
   const lines = [];
   lines.push("TEST LOG — Luke ISEE");
   lines.push("Set: " + set.title);
   lines.push("Set ID: " + set.id);
-  lines.push("Score: " + score + "/" + answers.length);
+  lines.push("Score: " + score + "/" + total);
   lines.push("Completed: " + when);
+  if (timeRanOut) lines.push("Time ran out — " + unanswered.length + " unanswered");
   lines.push("");
   if (missed.length === 0) {
-    lines.push("Missed questions: none — perfect score.");
+    lines.push(unanswered.length === 0
+      ? "Missed questions: none — perfect score."
+      : "Missed questions: none.");
   } else {
     lines.push("Missed questions (" + missed.length + "):");
     missed.forEach((a, i) => {
@@ -47,11 +111,20 @@ function buildTestLog(set, answers, score, when) {
       lines.push("   Feedback: " + a.feedback);
     });
   }
+  if (unanswered.length > 0) {
+    lines.push("");
+    lines.push("Unanswered questions (" + unanswered.length + "):");
+    unanswered.forEach((a, i) => {
+      lines.push((i + 1) + ". " + plainText(a.prompt));
+      lines.push("   Correct answer: " + a.correct);
+    });
+  }
   lines.push("");
   lines.push("All answers:");
   answers.forEach((a, i) => {
+    const tag = a.isCorrect ? "RIGHT" : (isUnanswered(a) ? "UNANSWERED" : "WRONG");
     lines.push((i + 1) + ". " + plainText(a.prompt) + " — Luke: " + a.chosen +
-      " | Correct: " + a.correct + " | " + (a.isCorrect ? "RIGHT" : "WRONG"));
+      " | Correct: " + a.correct + " | " + tag);
   });
   return lines.join("\n");
 }
@@ -119,10 +192,47 @@ function renderPicker() {
   show("picker");
 }
 
+function leaveToPicker() {
+  stopTimerInterval();
+  currentSet = null;
+  finishing = false;
+  renderPicker();
+}
+
+function updateTimeLeft() {
+  if (!currentSet) return;
+  const left = remainingMs(currentSet.id);
+  const el = $("time-left");
+  if (left == null) {
+    if (el) { el.hidden = true; el.textContent = ""; }
+    return;
+  }
+  if (el) { el.hidden = false; el.textContent = formatTimeLeft(left); }
+  if (left <= 0) finish({ timeRanOut: true });
+}
+
 function startSet(set) {
+  stopTimerInterval();
   currentSet = set; idx = 0; score = 0; answers = [];
+  finishing = false;
   $("set-title").textContent = set.title;
-  show("quiz"); renderQuestion();
+  if (SET_MINUTES[set.id] != null) {
+    getOrStartTimer(set.id);
+    const left = remainingMs(set.id);
+    if (left <= 0) {
+      // Time already expired (e.g. after Quit); auto-submit with every question unanswered.
+      finish({ timeRanOut: true });
+      return;
+    }
+    const el = $("time-left");
+    if (el) { el.hidden = false; el.textContent = formatTimeLeft(left); }
+    show("quiz"); renderQuestion();
+    timerInterval = setInterval(updateTimeLeft, 250);
+  } else {
+    const el = $("time-left");
+    if (el) { el.hidden = true; el.textContent = ""; }
+    show("quiz"); renderQuestion();
+  }
 }
 
 function renderQuestion() {
@@ -162,18 +272,55 @@ function answer(btn, q, chosen) {
   $("next-btn").hidden = false;
 }
 
-async function finish() {
+async function finish(opts) {
+  if (finishing) return;
+  finishing = true;
+  stopTimerInterval();
+  const timeRanOut = !!(opts && opts.timeRanOut);
+  if (timeRanOut) {
+    for (let i = answers.length; i < currentSet.questions.length; i++) {
+      const q = currentSet.questions[i];
+      answers.push({
+        prompt: q.prompt, chosen: "(unanswered)", correct: q.correct,
+        feedback: q.feedback, isCorrect: false, unanswered: true
+      });
+    }
+  }
+  const total = timeRanOut ? currentSet.questions.length : answers.length;
+  const unanswered = answers.filter(isUnanswered);
+  if (currentSet) clearTimer(currentSet.id);
   const when = new Date().toLocaleString("en-US", { timeZone: "America/New_York" }) + " ET";
-  const logText = buildTestLog(currentSet, answers, score, when);
-  saveCompletion(currentSet, { score, total: answers.length, completed: when, log: logText });
+  const logText = buildTestLog(currentSet, answers, score, when, timeRanOut ? { timeRanOut: true } : undefined);
+  saveCompletion(currentSet, { score, total, completed: when, log: logText });
   $("final-title").textContent = currentSet.title + " — done!";
-  $("final-score").textContent = "Final score: " + score + " / " + answers.length;
-  const missed = answers.filter(a => !a.isCorrect);
-  $("missed-list").innerHTML = missed.length === 0
-    ? "<p>🎉 No misses — perfect!</p>"
-    : "<h3>Missed (" + missed.length + ")</h3>" + missed.map(a =>
+  $("final-score").textContent = "Final score: " + score + " / " + total;
+  const ranOutEl = $("time-ran-out");
+  if (ranOutEl) {
+    if (timeRanOut) {
+      ranOutEl.hidden = false;
+      ranOutEl.textContent = "Time ran out — " + unanswered.length + " unanswered";
+    } else {
+      ranOutEl.hidden = true;
+      ranOutEl.textContent = "";
+    }
+  }
+  const missed = answers.filter(a => !a.isCorrect && !isUnanswered(a));
+  let missedHtml;
+  if (missed.length === 0 && unanswered.length === 0) {
+    missedHtml = "<p>🎉 No misses — perfect!</p>";
+  } else {
+    missedHtml = "";
+    if (missed.length === 0) missedHtml += "<p>No missed answers.</p>";
+    else missedHtml += "<h3>Missed (" + missed.length + ")</h3>" + missed.map(a =>
         "<div class='missed-item'><strong>" + a.prompt + "</strong><br>You answered: " +
         a.chosen + " • Correct: " + a.correct + "<br>" + a.feedback + "</div>").join("");
+    if (unanswered.length > 0) {
+      missedHtml += "<h3>Unanswered (" + unanswered.length + ")</h3>" + unanswered.map(a =>
+        "<div class='missed-item'><strong>" + a.prompt + "</strong><br>Correct: " +
+        a.correct + "</div>").join("");
+    }
+  }
+  $("missed-list").innerHTML = missedHtml;
   $("log-text").value = logText;
   show("results");
   await trySendLog(logText);
@@ -191,8 +338,8 @@ async function trySendLog(logText) {
 }
 
 if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded", async () => {
-  $("quit-btn").addEventListener("click", renderPicker);
-  $("back-btn").addEventListener("click", renderPicker);
+  $("quit-btn").addEventListener("click", leaveToPicker);
+  $("back-btn").addEventListener("click", leaveToPicker);
   $("next-btn").addEventListener("click", () => {
     idx++;
     if (idx < currentSet.questions.length) renderQuestion(); else finish();
@@ -212,5 +359,5 @@ if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded
 });
 
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { buildTestLog };
+  module.exports = { buildTestLog, SET_MINUTES, formatTimeLeft, isUnanswered };
 }
