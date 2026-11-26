@@ -1,0 +1,279 @@
+{
+  "version": 1,
+  "generatedFrom": "goals/school-homework-reports/hidden_files/replacements/isee_words5.json",
+  "sets": [
+    {
+      "id": "isee-words-test-5",
+      "section": "Words",
+      "title": "Luke ISEE Lower — Words Test 5",
+      "subtitle": "ISEE Lower — vocabulary, means most nearly",
+      "sourceFormId": "1FtAHscGaUUjCXR1i7Nl73DnsUEGpn3LJvNgi9gBNWsM",
+      "questions": [
+        {
+          "prompt": "1. The word APPREHENSIVE means most nearly —",
+          "options": [
+            "anxious",
+            "confident",
+            "calm",
+            "certain"
+          ],
+          "correct": "anxious",
+          "feedback": "Apprehensive means anxious or worried about what might happen."
+        },
+        {
+          "prompt": "2. The word DORMANT means most nearly —",
+          "options": [
+            "inactive",
+            "awake",
+            "growing",
+            "noisy"
+          ],
+          "correct": "inactive",
+          "feedback": "Dormant means inactive for a time, like a volcano or a seed in winter."
+        },
+        {
+          "prompt": "3. The word ELABORATE means most nearly —",
+          "options": [
+            "detailed",
+            "plain",
+            "simple",
+            "brief"
+          ],
+          "correct": "detailed",
+          "feedback": "Elaborate means full of detail and carefully planned, the opposite of plain."
+        },
+        {
+          "prompt": "4. The word BRISK means most nearly —",
+          "options": [
+            "speedy",
+            "gentle",
+            "sleepy",
+            "rough"
+          ],
+          "correct": "speedy",
+          "feedback": "Brisk means quick and energetic."
+        },
+        {
+          "prompt": "5. The word WITTY means most nearly —",
+          "options": [
+            "clever",
+            "rude",
+            "boring",
+            "loud"
+          ],
+          "correct": "clever",
+          "feedback": "Witty means clever and funny."
+        },
+        {
+          "prompt": "6. The word CONSPICUOUS means most nearly —",
+          "options": [
+            "obvious",
+            "hidden",
+            "peculiar",
+            "quiet"
+          ],
+          "correct": "obvious",
+          "feedback": "Conspicuous means easy to see — obvious."
+        },
+        {
+          "prompt": "7. The word DEFT means most nearly —",
+          "options": [
+            "skillful",
+            "diligent",
+            "clumsy",
+            "careful"
+          ],
+          "correct": "skillful",
+          "feedback": "Deft means skillful and quick with the hands."
+        },
+        {
+          "prompt": "8. The word FATIGUE means most nearly —",
+          "options": [
+            "tiredness",
+            "hunger",
+            "flaw",
+            "strength"
+          ],
+          "correct": "tiredness",
+          "feedback": "Fatigue is extreme tiredness."
+        },
+        {
+          "prompt": "9. The word INNATE means most nearly —",
+          "options": [
+            "inborn",
+            "learned",
+            "inept",
+            "taught"
+          ],
+          "correct": "inborn",
+          "feedback": "Innate means present from birth — inborn, not learned."
+        },
+        {
+          "prompt": "10. The word VANQUISH means most nearly —",
+          "options": [
+            "conquer",
+            "withdraw",
+            "surrender",
+            "retreat"
+          ],
+          "correct": "conquer",
+          "feedback": "To vanquish is to conquer or defeat completely."
+        },
+        {
+          "prompt": "11. The word CANDID means most nearly —",
+          "options": [
+            "frank",
+            "secretive",
+            "rude",
+            "shy"
+          ],
+          "correct": "frank",
+          "feedback": "Candid means frank and honest in speaking."
+        },
+        {
+          "prompt": "12. The word ANCIENT means most nearly —",
+          "options": [
+            "very old",
+            "brand new",
+            "modern",
+            "recent"
+          ],
+          "correct": "very old",
+          "feedback": "Ancient means very old."
+        },
+        {
+          "prompt": "13. The word HASTY means most nearly —",
+          "options": [
+            "rushed",
+            "careful",
+            "slow",
+            "lazy"
+          ],
+          "correct": "rushed",
+          "feedback": "Hasty means done in a rush."
+        },
+        {
+          "prompt": "14. The word PREVAIL means most nearly —",
+          "options": [
+            "triumph",
+            "launch",
+            "begin",
+            "surrender"
+          ],
+          "correct": "triumph",
+          "feedback": "To prevail is to triumph — to win out in the end."
+        },
+        {
+          "prompt": "15. The word COARSE means most nearly —",
+          "options": [
+            "rough",
+            "glossy",
+            "smooth",
+            "soft"
+          ],
+          "correct": "rough",
+          "feedback": "Coarse means rough in texture."
+        },
+        {
+          "prompt": "16. The word PERTURB means most nearly —",
+          "options": [
+            "disturb",
+            "calm",
+            "praise",
+            "ignore"
+          ],
+          "correct": "disturb",
+          "feedback": "To perturb is to disturb or unsettle."
+        },
+        {
+          "prompt": "17. The word ASSEMBLE means most nearly —",
+          "options": [
+            "gather",
+            "scatter",
+            "announce",
+            "separate"
+          ],
+          "correct": "gather",
+          "feedback": "To assemble is to gather together."
+        },
+        {
+          "prompt": "18. The word OBLIGE means most nearly —",
+          "options": [
+            "compel",
+            "widen",
+            "visit",
+            "delay"
+          ],
+          "correct": "compel",
+          "feedback": "To oblige is to compel — to make someone do something."
+        },
+        {
+          "prompt": "19. The word VAST means most nearly —",
+          "options": [
+            "enormous",
+            "tiny",
+            "empty",
+            "distant"
+          ],
+          "correct": "enormous",
+          "feedback": "Vast means enormous."
+        },
+        {
+          "prompt": "20. The word GLEAM means most nearly —",
+          "options": [
+            "shine",
+            "fade",
+            "hide",
+            "crack"
+          ],
+          "correct": "shine",
+          "feedback": "To gleam is to shine with a soft light."
+        },
+        {
+          "prompt": "21. The word JAGGED means most nearly —",
+          "options": [
+            "uneven",
+            "smooth",
+            "round",
+            "flat"
+          ],
+          "correct": "uneven",
+          "feedback": "Jagged means having sharp, uneven points or edges."
+        },
+        {
+          "prompt": "22. The word MEAGER means most nearly —",
+          "options": [
+            "scarce",
+            "plentiful",
+            "generous",
+            "heavy"
+          ],
+          "correct": "scarce",
+          "feedback": "Meager means scarce — too small in amount."
+        },
+        {
+          "prompt": "23. The word STURDY means most nearly —",
+          "options": [
+            "strong",
+            "fragile",
+            "weak",
+            "thin"
+          ],
+          "correct": "strong",
+          "feedback": "Sturdy means strong and solidly built."
+        },
+        {
+          "prompt": "24. The word TIMID means most nearly —",
+          "options": [
+            "shy",
+            "bold",
+            "brave",
+            "loud"
+          ],
+          "correct": "shy",
+          "feedback": "Timid means shy and easily frightened."
+        }
+      ]
+    }
+  ]
+}

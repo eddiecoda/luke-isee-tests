@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luke's ISEE Tests</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>📚 Luke's ISEE Tests</h1>
+  <p class="tagline">One question at a time. Tap an answer, see how you did, keep going.</p>
+</header>
+<main id="app">
+  <section id="picker" aria-label="Choose a test"></section>
+  <section id="quiz" hidden aria-label="Test in progress">
+    <div class="quiz-top">
+      <button id="quit-btn" class="ghost" type="button">← All tests</button>
+      <div id="progress-text"></div>
+      <div id="score-text"></div>
+    </div>
+    <div class="progress-bar"><div id="progress-fill"></div></div>
+    <h2 id="set-title"></h2>
+    <p id="question-prompt"></p>
+    <div id="options"></div>
+    <div id="feedback" hidden></div>
+    <button id="next-btn" class="primary" type="button" hidden>Next →</button>
+  </section>
+  <section id="results" hidden aria-label="Results">
+    <h2 id="final-title"></h2>
+    <p id="final-score"></p>
+    <div id="missed-list"></div>
+    <h3>TEST LOG</h3>
+    <p id="log-status">Sending your results…</p>
+    <textarea id="log-text" rows="12" readonly></textarea>
+    <div class="row">
+      <button id="copy-log-btn" class="primary" type="button">Copy TEST LOG</button>
+      <button id="retry-log-btn" class="ghost" type="button">Try sending again</button>
+      <button id="back-btn" class="ghost" type="button">← All tests</button>
+    </div>
+    <p class="note">If sending fails, tap “Copy TEST LOG” and the log stays saved on this phone — it is never lost.</p>
+  </section>
+</main>
+<footer><p>ISEE practice • Words pilot • More sections coming soon</p></footer>
+<script src="app.js"></script>
+</body>
+</html>
