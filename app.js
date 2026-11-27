@@ -24,8 +24,27 @@ const SET_MINUTES = {
   "isee-ma-set-8": 15
 };
 
-let DATA = null, currentSet = null, idx = 0, score = 0, answers = [];
+let DATA = null, currentSet = null, currentQuestions = [], idx = 0, score = 0, answers = [];
 let timerInterval = null, finishing = false;
+
+/* Fisher-Yates shuffle (returns a new array; input untouched).
+   The TRTL specs store the correct answer first and Forms shuffled on
+   display — the app must shuffle itself, or every answer sits at index 0. */
+function shuffled(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+
+/* Per-set working copy with each question's options independently shuffled.
+   Scoring/feedback/log all compare by answer VALUE, so order never matters.
+   The timer, passages and completion logic all read this same working copy. */
+function prepareQuestions(set) {
+  return set.questions.map(q => Object.assign({}, q, { options: shuffled(q.options) }));
+}
 
 function loadCompletions() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
@@ -195,6 +214,7 @@ function renderPicker() {
 function leaveToPicker() {
   stopTimerInterval();
   currentSet = null;
+  currentQuestions = [];
   finishing = false;
   renderPicker();
 }
@@ -213,7 +233,7 @@ function updateTimeLeft() {
 
 function startSet(set) {
   stopTimerInterval();
-  currentSet = set; idx = 0; score = 0; answers = [];
+  currentSet = set; currentQuestions = prepareQuestions(set); idx = 0; score = 0; answers = [];
   finishing = false;
   $("set-title").textContent = set.title;
   if (SET_MINUTES[set.id] != null) {
@@ -236,10 +256,10 @@ function startSet(set) {
 }
 
 function renderQuestion() {
-  const q = currentSet.questions[idx];
-  $("progress-text").textContent = "Question " + (idx + 1) + " of " + currentSet.questions.length;
+  const q = currentQuestions[idx];
+  $("progress-text").textContent = "Question " + (idx + 1) + " of " + currentQuestions.length;
   $("score-text").textContent = "Score: " + score;
-  $("progress-fill").style.width = ((idx / currentSet.questions.length) * 100) + "%";
+  $("progress-fill").style.width = ((idx / currentQuestions.length) * 100) + "%";
   const pg = $("passage");
   if (q.passage) { pg.textContent = q.passage; pg.hidden = false; }
   else { pg.textContent = ""; pg.hidden = true; }
@@ -268,7 +288,7 @@ function answer(btn, q, chosen) {
   fb.className = isCorrect ? "right" : "wrong";
   fb.textContent = (isCorrect ? "✓ Correct! " : "✗ Not quite — the answer is “" + q.correct + "”. ") + q.feedback;
   $("score-text").textContent = "Score: " + score;
-  $("next-btn").textContent = idx + 1 === currentSet.questions.length ? "See results →" : "Next →";
+  $("next-btn").textContent = idx + 1 === currentQuestions.length ? "See results →" : "Next →";
   $("next-btn").hidden = false;
 }
 
@@ -278,15 +298,15 @@ async function finish(opts) {
   stopTimerInterval();
   const timeRanOut = !!(opts && opts.timeRanOut);
   if (timeRanOut) {
-    for (let i = answers.length; i < currentSet.questions.length; i++) {
-      const q = currentSet.questions[i];
+    for (let i = answers.length; i < currentQuestions.length; i++) {
+      const q = currentQuestions[i];
       answers.push({
         prompt: q.prompt, chosen: "(unanswered)", correct: q.correct,
         feedback: q.feedback, isCorrect: false, unanswered: true
       });
     }
   }
-  const total = timeRanOut ? currentSet.questions.length : answers.length;
+  const total = timeRanOut ? currentQuestions.length : answers.length;
   const unanswered = answers.filter(isUnanswered);
   if (currentSet) clearTimer(currentSet.id);
   const when = new Date().toLocaleString("en-US", { timeZone: "America/New_York" }) + " ET";
@@ -342,7 +362,7 @@ if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded
   $("back-btn").addEventListener("click", leaveToPicker);
   $("next-btn").addEventListener("click", () => {
     idx++;
-    if (idx < currentSet.questions.length) renderQuestion(); else finish();
+    if (idx < currentQuestions.length) renderQuestion(); else finish();
   });
   $("copy-log-btn").addEventListener("click", async () => {
     try { await navigator.clipboard.writeText($("log-text").value); $("copy-log-btn").textContent = "Copied ✓"; }
@@ -359,5 +379,5 @@ if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded
 });
 
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { buildTestLog, SET_MINUTES, formatTimeLeft, isUnanswered };
+  module.exports = { buildTestLog, SET_MINUTES, formatTimeLeft, isUnanswered, shuffled, prepareQuestions };
 }
